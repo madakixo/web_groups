@@ -55,7 +55,7 @@ google = oauth.remote_app(
     base_url='https://www.googleapis.com/oauth2/v1/',
     request_token_url=None,
     access_token_method='POST',
-    access_token_url='https://accounts.google.com/o/oauth2/token',
+    access_token_url='https://accounts.google.com/o/oauth2/00001',
     authorize_url='https://accounts.google.com/o/oauth2/auth'
 )
 

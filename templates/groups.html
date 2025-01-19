@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{{ group.name }}</title>
+</head>
+<body>
+    <h1>{{ group.name }}</h1>
+    <form action="{{ url_for('create_post') }}" method="post">
+        <input type="hidden" name="group_id" value="{{ group.id }}">
+        <textarea name="content" required></textarea>
+        <button type="submit">Submit Post</button>
+    </form>
+    <ul>
+    {% for post in posts %}
+        <li>{{ post.content }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
